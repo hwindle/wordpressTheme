@@ -1,0 +1,84 @@
+/***************************************
+ * TYPOGRAPHY
+ * 
+ * font-face, with hypenation and ampersands after
+ ***************************************/
+
+@font-face {
+  /* For the body copy and non-active links */
+        font-family: body-sans;
+  src: url("../assets/fonts/Roboto-Regular-webfont.eot");
+  src: url("../assets/fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/Roboto-Regular-webfont.svg#Roboto-Regular") format("svg"),
+    url("../assets/fonts/Roboto-Regular-webfont.ttf") format("truetype"),
+    url("../assets/fonts/Roboto-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  /* for small titles and the strong tag */
+  font-family: body-bold;
+  src: url("../assets/fonts/Roboto-Medium-webfont.eot");
+  src: url("../assets/fonts/Roboto-Medium-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/Roboto-Medium-webfont.svg#Roboto-Medium") format("svg"),
+    url("../assets/fonts/Roboto-Medium-webfont.ttf") format("truetype"),
+    url("../assets/fonts/Roboto-Medium-webfont.woff") format("woff"),
+    url("../assets/fonts/Roboto-Medium-webfont.otf");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  /* for em, italics */
+  font-family: body-italic;
+  src: url("../assets/fonts/Roboto-MediumItalic-webfont.eot");
+  src:  url("../assets/fonts/Roboto-MediumItalic-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/Roboto-MediumItalic-webfont.svg#Roboto-MediumItalic") format("svg"),
+    url("../assets/fonts/Roboto-MediumItalic-webfont.ttf") format("truetype"),
+    url("../assets/fonts/Roboto-MediumItalic-webfont.woff") format("woff"),
+    url("../assets/fonts/Roboto-MediumItalic-webfont.otf");
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  /* For h1-h3 headings */
+  font-family: headings;
+  src: url("../assets/fonts/WalkwaySemiBold.eot");
+  src: url("../assets/fonts/WalkwaySemiBold.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/WalkwaySemiBold.svg#WalkwaySemiBold") format("svg"),
+    url("../assets/fonts/Walkway_SemiBold.ttf") format("truetype"),
+    url("../assets/fonts/WalkwaySemiBold.woff") format("woff"),
+    url("../assets/fonts/WalkwaySemiBold.otf");
+  font-stretch: normal;
+  font-style: normal;
+}
+
+/* setting up the font stacks */
+body {
+  font-size: 14px;
+  font-family: body-sans, "Droid sans", Helvetica, Arial, sans-serif;
+}
+
+pre, code {
+  font-family: Courier, monospace;
+  font-size: 100%;
+}
+
+h1, h2, h3 {
+  font-family: headings, "Liberation sans", Verdana, sans-serif;
+}
+
+h4, h5, h6 {
+  font-family: body-bold, "Droid sans", Helvetica, Arial, sans-serif;
+}
+
+footer {
+  font-family: body-italic, "Droid sans", Helvetica, Arial, sans-serif;
+}
+
+

@@ -1,0 +1,4 @@
+*.md
+
+.sass-cache/
+.swp

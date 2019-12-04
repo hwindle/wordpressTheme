@@ -1,0 +1,59 @@
+/*******************************************
+ * NAVIGATION & LINKS
+ * 
+ * a link settings and navigation bar styling
+ ******************************************/
+
+a, a:visited {
+  font-size: 100%;
+  color: #70B7DA;
+  font-weight: 100;
+  text-decoration: none;
+  border-bottom: 1px solid #793DFA;
+}
+
+a:hover, a:focus {
+  color: #793DFA;
+  border-bottom: 1px solid #70B7DA;
+}
+
+#mainNav {  }
+
+#mainNav a, #mainNav a:visited {
+  color: #DDD;
+  font-size: 160%;
+  text-shadow: 1px 1px 1px white, -1px -1px 0 white;
+  border-bottom: 1px solid black;
+}
+
+#mainNav a:hover, #mainNav a:focus {
+  color: #793DFA;
+  text-shadow: 1px 1px 1px #70B7DA, -1px -1px 0 #793DFA;
+  border-bottom: 1px solid #70B7DA;
+}
+
+#mainNav {
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+  padding: 1em;
+}
+
+#mainNav ul li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: black;
+  -webkit-transform: skew(-20deg);
+  transform: skew(-20deg);
+}
+
+@media (max-width: 768px) {
+  nav ul li { display: block; }
+}

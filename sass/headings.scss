@@ -1,0 +1,61 @@
+/*******************************************
+ * HEADINGS & PARAGRAPHS
+ * 
+ * h1-h6 values and line-heights  go here.
+ ******************************************/
+
+h1 {
+  font-size: 3.5em;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2.8em;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-size: 2.4em;
+}
+
+h4 {
+  font-size: 2em;
+}
+
+h5 {
+  font-size: 1.4em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+p {
+  font-size: 140%;
+  line-height: 150%;
+}
+
+h1, h3, h5 {
+  line-height: 120%;
+  color: white;
+}
+
+h2, h4, h6 {
+  line-height: 110%;
+  color: #DDD;
+}
+
+h2, h3 {
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6),
+                0 0 3px rgba(255, 255, 255, 0.7);
+}
+
+h1 a:link, h2 a:link, h3 a:link, 
+h1 a:visited, h2 a:visited, h3 a:visited,
+h1 a:hover, h2 a:hover, h3 a:hover,
+h1 a:focus, h2 a:focus, h3 a:focus {
+  color: white;
+  border: none;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6),                                                                  
+                0 0 3px rgba(255, 255, 255, 0.7); 
+}

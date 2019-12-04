@@ -1,0 +1,16 @@
+/*********************************
+ * Asides and Blockquotes
+ *
+ **/
+
+aside {
+  
+  margin: 10px;
+  padding: 0.6em;
+  width: 40%;
+  word-wrap: break-word;
+  /* border: 5px solid #70B7DA; */
+  background: #70B7DA;
+  color: black;
+  @include cutout_corners(#70B7DA, 10px, 10px);
+}

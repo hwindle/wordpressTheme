@@ -1,0 +1,303 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/********************************************
+ * LAYOUT
+ *
+ * Setting up the padding, basic colours, and 
+ * any positioning.
+ ********************************************/
+html, body {
+  height: 100%; }
+
+body {
+  background: #222;
+  color: white; }
+
+header#top_head {
+  width: 100%;
+  height: 200px;
+  padding-top: 20px;
+  background: url("../assets/ui/header-bg_960-200.png") repeat-X #222;
+  background-size: 100% cover; }
+
+#top_head hgroup {
+  padding: 0;
+  margin-left: 200px; }
+
+#top_head hgroup h1 {
+  font-size: 3.4em;
+  text-shadow: 2px 2px 2px #CCC, -3px -2px 0 #333; }
+
+#top_head hgroup h2 {
+  font-size: 2.3em;
+  text-shadow: 1px 1px 4px black; }
+
+#logo {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  top: 0;
+  left: 0;
+  margin: 20px;
+  background: #793DFA;
+  border-radius: 100%;
+  color: white;
+  font-size: 140%;
+  font-weight: bold;
+  text-align: center;
+  font-family: Courier, Monospace; }
+
+pre, code, p {
+  margin-bottom: 10px; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px 0; }
+
+#sidebar1, #sidebar2 {
+  height: 100%;
+  padding-top: 20px; }
+
+@media (max-width: 768px) {
+  #sidebar2 {
+    display: none; } }
+nav#mainNav {
+  padding: 0 2em; }
+
+footer {
+  padding-top: 2em; }
+
+/*********************************
+* Asides and Blockquotes
+*
+**/
+aside {
+  margin: 10px;
+  padding: 0.6em;
+  width: 40%;
+  word-wrap: break-word;
+  /* border: 5px solid #70B7DA; */
+  background: #70B7DA;
+  color: black;
+  background: #70B7DA;
+  background: linear-gradient(135deg, transparent 10px, #70B7DA 0) top left, linear-gradient(225deg, transparent 10px, #70B7DA 0) top right, linear-gradient(-45deg, transparent 10px, #70B7DA 0) bottom right, linear-gradient(45deg, transparent 10px, #70B7DA 0) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat; }
+
+/*******************************************
+* HEADINGS & PARAGRAPHS
+* 
+* h1-h6 values and line-heights  go here.
+******************************************/
+h1 {
+  font-size: 3.5em;
+  font-weight: 600; }
+
+h2 {
+  font-size: 2.8em;
+  padding-bottom: 10px; }
+
+h3 {
+  font-size: 2.4em; }
+
+h4 {
+  font-size: 2em; }
+
+h5 {
+  font-size: 1.4em; }
+
+h6 {
+  font-size: 1em; }
+
+p {
+  font-size: 140%;
+  line-height: 150%; }
+
+h1, h3, h5 {
+  line-height: 120%;
+  color: white; }
+
+h2, h4, h6 {
+  line-height: 110%;
+  color: #DDD; }
+
+h2, h3 {
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6), 0 0 3px rgba(255, 255, 255, 0.7); }
+
+h1 a:link, h2 a:link, h3 a:link,
+h1 a:visited, h2 a:visited, h3 a:visited,
+h1 a:hover, h2 a:hover, h3 a:hover,
+h1 a:focus, h2 a:focus, h3 a:focus {
+  color: white;
+  border: none;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6), 0 0 3px rgba(255, 255, 255, 0.7); }
+
+/* Welcome to Compass. Use this file to write IE specific override styles.
+* Import this file using the following HTML or equivalent:
+* <!--[if IE]>
+*   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+* <![endif]--> */
+/***************************************
+* IMAGES
+*
+* Including figure, hover effects over images
+* and captions
+***************************************/
+figure > img {
+  width: 80%;
+  height: 80%;
+  border: 2px solid white; }
+
+/*******************************************
+* NAVIGATION & LINKS
+* 
+* a link settings and navigation bar styling
+******************************************/
+a, a:visited {
+  font-size: 100%;
+  color: #70B7DA;
+  font-weight: 100;
+  text-decoration: none;
+  border-bottom: 1px solid #793DFA; }
+
+a:hover, a:focus {
+  color: #793DFA;
+  border-bottom: 1px solid #70B7DA; }
+
+#mainNav a, #mainNav a:visited {
+  color: #DDD;
+  font-size: 160%;
+  text-shadow: 1px 1px 1px white, -1px -1px 0 white;
+  border-bottom: 1px solid black; }
+
+#mainNav a:hover, #mainNav a:focus {
+  color: #793DFA;
+  text-shadow: 1px 1px 1px #70B7DA, -1px -1px 0 #793DFA;
+  border-bottom: 1px solid #70B7DA; }
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+  padding: 1em; }
+
+#mainNav ul li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: black;
+  -webkit-transform: skew(-20deg);
+  transform: skew(-20deg); }
+
+@media (max-width: 768px) {
+  nav ul li {
+    display: block; } }
+/* Welcome to Compass. Use this file to define print styles.
+* Import this file using the following HTML or equivalent:
+* <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/***************************************
+* TYPOGRAPHY
+* 
+* font-face, with hypenation and ampersands after
+***************************************/
+@font-face {
+  /* For the body copy and non-active links */
+  font-family: body-sans;
+  src: url("../assets/fonts/Roboto-Regular-webfont.eot");
+  src: url("../assets/fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Roboto-Regular-webfont.svg#Roboto-Regular") format("svg"), url("../assets/fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("../assets/fonts/Roboto-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal; }
+@font-face {
+  /* for small titles and the strong tag */
+  font-family: body-bold;
+  src: url("../assets/fonts/Roboto-Medium-webfont.eot");
+  src: url("../assets/fonts/Roboto-Medium-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Roboto-Medium-webfont.svg#Roboto-Medium") format("svg"), url("../assets/fonts/Roboto-Medium-webfont.ttf") format("truetype"), url("../assets/fonts/Roboto-Medium-webfont.woff") format("woff"), url("../assets/fonts/Roboto-Medium-webfont.otf");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal; }
+@font-face {
+  /* for em, italics */
+  font-family: body-italic;
+  src: url("../assets/fonts/Roboto-MediumItalic-webfont.eot");
+  src: url("../assets/fonts/Roboto-MediumItalic-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Roboto-MediumItalic-webfont.svg#Roboto-MediumItalic") format("svg"), url("../assets/fonts/Roboto-MediumItalic-webfont.ttf") format("truetype"), url("../assets/fonts/Roboto-MediumItalic-webfont.woff") format("woff"), url("../assets/fonts/Roboto-MediumItalic-webfont.otf");
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal; }
+@font-face {
+  /* For h1-h3 headings */
+  font-family: headings;
+  src: url("../assets/fonts/WalkwaySemiBold.eot");
+  src: url("../assets/fonts/WalkwaySemiBold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/WalkwaySemiBold.svg#WalkwaySemiBold") format("svg"), url("../assets/fonts/Walkway_SemiBold.ttf") format("truetype"), url("../assets/fonts/WalkwaySemiBold.woff") format("woff"), url("../assets/fonts/WalkwaySemiBold.otf");
+  font-stretch: normal;
+  font-style: normal; }
+/* setting up the font stacks */
+body {
+  font-size: 14px;
+  font-family: body-sans, "Droid sans", Helvetica, Arial, sans-serif; }
+
+pre, code {
+  font-family: Courier, monospace;
+  font-size: 100%; }
+
+h1, h2, h3 {
+  font-family: headings, "Liberation sans", Verdana, sans-serif; }
+
+h4, h5, h6 {
+  font-family: body-bold, "Droid sans", Helvetica, Arial, sans-serif; }
+
+footer {
+  font-family: body-italic, "Droid sans", Helvetica, Arial, sans-serif; }
+
+/*# sourceMappingURL=style.css.map */
